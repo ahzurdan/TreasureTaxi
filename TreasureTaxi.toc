@@ -1,0 +1,7 @@
+﻿## Interface: 60200
+## Title: TreasureTaxi
+## Notes: TreasureTaxi
+## SavedVariables: TaxiOptions
+## RequiredDeps: TomTom
+Locations.lua
+TreasureTaxi.lua
