@@ -251,6 +251,14 @@ SlashCmdList["TAXI"] = function(msg)
 				DEFAULT_CHAT_FRAME:AddMessage("No longer showing all points on the map")
 				ClearPointList()
 			end
+		else
+			DEFAULT_CHAT_FRAME:AddMessage("Usage:")
+			DEFAULT_CHAT_FRAME:AddMessage("    /taxi")
+			DEFAULT_CHAT_FRAME:AddMessage("        - turns the addons on and off")
+			DEFAULT_CHAT_FRAME:AddMessage("    /taxi type [type]")
+			DEFAULT_CHAT_FRAME:AddMessage("        - switch between waypoint types (mount, rare, treasure)")
+			DEFAULT_CHAT_FRAME:AddMessage("    /taxi show")
+			DEFAULT_CHAT_FRAME:AddMessage("        - toggle showing all possible points on the map ")
 		end
 	elseif TaxiOptions.enabled then
         frame:SetScript("OnUpdate", nil)
